@@ -20,8 +20,8 @@ My reply was:
 Turned out I was wrong, you need ed, find, grep and head.
 
 
-## How do I run it on my Linux laptop ##
-Don't. Run it someone elses desktop.
+## How do I run it on my Linux server ##
+Don't. Run it someone elses server.
 
 Just kidding.
 
