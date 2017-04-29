@@ -27,3 +27,15 @@ Just kidding.
 
 Even it the script should be harmless it is pretty annoying. If you feel a need to test it, setup a virtual machine or container. Do not ever run it on a production machine, not even "Just to see if it works".
 
+## I didn't listen and ran it, why is it so slow ##
+It tries to find a writable shell-script that is not infected, starting at /. Unless you are root it will take a while until it finds your $HOME.
+
+## People are angry, what do I do now? ##
+Change name, move to another country.
+
+...or, to find infected scripts
+````
+find / -type f -exec grep -l 'ShVirus' {} \; 2>/dev/null
+````
+(Simply remove the second line (containing ShVirus) in all those files and you should be ok.)
+
